@@ -1,0 +1,402 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 88vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.container{
+    position: relative;
+    max-width: 98%;
+    max-height: 88%;
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    overflow-y: scroll;
+    
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.container header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+.container form{
+    position: relative;
+    margin-top: 30px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hid
+}
+
+.container .reportform{
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    overflow: hide;
+    min-height: 20%;
+}
+
+
+.container form .details{
+margin-top: 10px;
+}
+
+.container form .details.two{
+margin-top: 10px;
+}
+
+.container form .first{
+margin-top: 30px;
+padding: 10px;
+background-color: #f2f2f2;
+
+}
+
+.container form .title1{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .second{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f2f2f2;
+   
+}
+
+.container form .title2{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 13px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+.input-field input{
+    height: 42px;
+    margin: 8px 0;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.container form button , .backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #4070f4;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+/* .container form .submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #4070f4;
+    margin-top: -20px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+} */
+
+.container form button ,
+.container form .backBtn{
+    font-size: 14px;
+    font-weight: 400;;
+}
+
+
+form button:hover{
+    background-color: #265df2;
+}
+
+form button i ,
+form .backBtn i{
+    margin: 0 6px;
+}
+
+form .backBtn i{
+    transform: rotate(180deg);
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+
+}
+
+form .buttons button , .backBtn{
+    margin-right: 14px;
+
+}
+
+
+/* reporting table css */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination li {
+    color: black;
+    float: left;
+    /* padding: 8px 16px; */
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    list-style-type: none;
+  }
+
+  .page-link {
+    text-decoration: none
+  }
+  
+  .pagination li > a{
+    display: block;
+    padding: 0px 10px;
+  }
+  .pagination li.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0px 10px;
+    border: 1px solid #4CAF50;
+    
+  }
+
+  .pagination li.disabled {
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    padding: 0px 10px;
+    /* border: 1px solid #4CAF50; */
+    
+  }
+  
+  .pagination li:hover:not(.active) {background-color: #ddd;}
+
+
+
+.dd_btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 14px !important;
+}
+
+.get_year{
+    box-shadow: 0 3px 6px rgb(0 0 0 / 13%);
+}
+
+.get_month{
+    box-shadow: 0 3px 6px rgb(0 0 0 / 13%);
+}
+
+form .fields .input-section{
+    display: flex;
+    width: calc(100% / 5 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-section label{
+    font-size: 13px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-section input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+
+.input-section input{
+    height: 42px;
+    margin: 8px 0;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.input-section input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+
+.input-section select,
+.input-section input[type="date"]{
+    color: #707070;
+}
+
+.input-section input[type="date"]:valid{
+    color: #333;
+}
+
+.input-section input[type="date"]:valid{
+    color: #333;
+}
+
+
+.submitBtn{
+    height: 42px !important;
+    margin: 29px 0;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 13%);
+    margin-bottom: 30px !important;
+}
